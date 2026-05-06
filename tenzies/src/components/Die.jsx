@@ -1,7 +1,9 @@
-export default function Die(){
+export default function Die(props){
   return(
     <>
-        <button>1</button>
+        <button onClick={props.onClick}
+                style={{backgroundColor:props.isHeld?"lightgreen":"white"}}
+            >{props.value}</button>
     </>
   )
 }

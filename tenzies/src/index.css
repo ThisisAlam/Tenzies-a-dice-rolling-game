@@ -7,3 +7,14 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #ccc;
 }
+body {
+  margin-top: 2rem;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  font-family: 'Inter', sans-serif;
+  background-color: #ccc;
+}

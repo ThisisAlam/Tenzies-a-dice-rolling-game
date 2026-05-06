@@ -1,0 +1,112 @@
+.win-screen{
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0,0,0,0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* z-index: 1000; */
+}
+.win-card{
+    width: 350px;
+    max-width: 90%;
+    transform: translateY(-50px);
+    background-color: white;
+
+    border-radius: 16px;
+
+    padding: 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* gap: 1rem; */
+
+    border: 4px solid blueviolet;
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.25);
+
+    animation: popUp 0.3s ease;
+}
+.trophy{
+    font-size: 4rem;
+    animation: bounce 1s infinite alternate;
+}
+
+.win-screen h1{
+    margin: 0;
+
+    font-size: 2rem;
+    font-weight: 800;
+
+    color: blueviolet;
+}
+
+.stats{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+}
+
+.stats p{
+    margin: 0;
+
+    background-color: rgb(238, 238, 238);
+
+    padding: 0.5rem;
+
+    border-radius: 8px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.win-screen button{
+    margin-top: 1.5rem;
+
+    border: none;
+    outline: none;
+
+    background-color: blueviolet;
+    color: white;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+
+    padding: 0.75em 1em;
+
+    border-radius: 0.5em;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.win-screen button:hover{
+    transform: scale(1.05);
+}
+
+.win-screen button:active{
+    transform: scale(0.98);
+}
+
+@keyframes bounce{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(-10px);
+    }
+}
