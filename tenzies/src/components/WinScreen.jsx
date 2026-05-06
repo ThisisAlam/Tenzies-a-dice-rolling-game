@@ -1,9 +1,8 @@
 
-import Confetti from "react-confetti"
 export default function WinScreen(props){
 
     return(
-        <section className="win-screen">
+    <section className="win-screen">
 
         <div className="win-card">
 
